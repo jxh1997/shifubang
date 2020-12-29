@@ -2,7 +2,7 @@
   <a-layout id="components-layout-demo-custom-trigger">
     <a-layout-sider v-model:collapsed="collapsed" :trigger="null" collapsible>
       <div class="logo">
-        师傅邦订单管理系统
+        师傅邦满意度回访
       </div>
 
       <a-menu theme="dark" mode="inline" v-model:selectedKeys="selectedKeys">
@@ -12,7 +12,7 @@
 
         <a-menu-item key="2">
 
-          <router-link :to="{path:'/order'}">订单</router-link>
+          <router-link :to="{path:'/order'}">回访名单</router-link>
 
         </a-menu-item>
       </a-menu>
@@ -31,6 +31,7 @@
         />
       </a-layout-header>
       <a-layout-content
+        class="h_content"
         :style="{
           margin: '24px 16px',
           padding: '24px',
@@ -64,6 +65,10 @@ export default {
 };
 </script>
 <style scoped>
+.h_content {
+  height: 100%;
+  overflow: auto;
+}
 .ant-layout {
   height: 100%;
 }

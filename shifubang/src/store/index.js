@@ -53,11 +53,11 @@ export default createStore({
       key: 'action',
       slots: { customRender: 'action' },
     },
-  ],
+    ],
 
     data: [
       {
-        key: "1",
+        key: 1,
         region: "江西省吉安市新干县金川镇",
         project: '安装',
         // brand: "沁园-橱下超滤机",
@@ -68,7 +68,7 @@ export default createStore({
         telephone: '15000296505'
       },
       {
-        key: "2",
+        key: 2,
         region: "甘肃省武威市凉州区五和乡",
         project: '安装',
         // brand: "沁园-纯水机",
@@ -79,7 +79,7 @@ export default createStore({
         telephone: '15002693910'
       },
       {
-        key: "3",
+        key: 3,
         region: "陕西省西安市碑林区太乙路街道",
         project: '安装',
         // brand: "沁园-橱下RO机",
@@ -90,7 +90,7 @@ export default createStore({
         telephone: '15003582722'
       },
       {
-        key: "4",
+        key: 4,
         region: "江西省吉安市新干县金川镇",
         project: '安装',
         // brand: "沁园-橱下超滤机",
@@ -101,7 +101,7 @@ export default createStore({
         telephone: '15000296505'
       },
       {
-        key: "5",
+        key: 5,
         region: "甘肃省武威市凉州区五和乡",
         project: '安装',
         // brand: "沁园-纯水机",
@@ -112,7 +112,7 @@ export default createStore({
         telephone: '15002693910'
       },
       {
-        key: "6",
+        key: 6,
         region: "陕西省西安市碑林区太乙路街道",
         project: '安装',
         // brand: "沁园-橱下RO机",
@@ -122,10 +122,11 @@ export default createStore({
         sales: 'BXSD160524780272653310',
         telephone: '15003582722'
       },
-      
+
     ]
   },
   mutations: {
+    
   },
   actions: {
   },
