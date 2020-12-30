@@ -1,33 +1,23 @@
 <template>
   <a-layout id="components-layout-demo-custom-trigger">
     <a-layout-sider v-model:collapsed="collapsed" :trigger="null" collapsible>
-      <div class="logo">
-        师傅邦满意度回访
-      </div>
+      <div class="logo">师傅邦满意度回访</div>
 
       <a-menu theme="dark" mode="inline" v-model:selectedKeys="selectedKeys">
         <a-menu-item key="1">
-          <router-link :to="{path:'/index'}">首页</router-link>
+          <router-link :to="{ path: '/index' }">首页</router-link>
         </a-menu-item>
 
         <a-menu-item key="2">
-
-          <router-link :to="{path:'/order'}">回访名单</router-link>
-
+          <router-link :to="{ path: '/order' }">回访名单</router-link>
         </a-menu-item>
       </a-menu>
     </a-layout-sider>
     <a-layout>
       <a-layout-header style="background: #fff; padding: 0">
-        <menu-unfold-outlined
-          v-if="collapsed"
-          class="trigger"
-          @click="() => (collapsed = !collapsed)"
-        />
         <menu-fold-outlined
-          v-else
           class="trigger"
-          @click="() => (collapsed = !collapsed)"
+          @click="gotoLogin"
         />
       </a-layout-header>
       <a-layout-content
@@ -45,15 +35,23 @@
   </a-layout>
 </template>
 <script>
-import {
-  MenuUnfoldOutlined,
-  MenuFoldOutlined,
-} from "@ant-design/icons-vue";
-
+import {  MenuFoldOutlined } from "@ant-design/icons-vue";
+import { getCurrentInstance } from "vue";
 
 export default {
+  setup() {
+    const { ctx } = getCurrentInstance()
+
+    const gotoLogin = () => {
+      ctx.$router.push('/')
+    }
+
+    return {
+      gotoLogin
+    }
+  },
   components: {
-    MenuUnfoldOutlined,
+    // MenuUnfoldOutlined,
     MenuFoldOutlined,
   },
   data() {

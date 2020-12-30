@@ -96,7 +96,7 @@ export default createStore({
         // brand: "沁园-橱下超滤机",
         seller: '天猫/沁园旗舰店',
         maintainer: '金川镇黄师傅*1',
-        acceptance: 'C2020111315627763',
+        acceptance: 'C2020111315623463',
         sales: 'BXSD160523700281535421',
         telephone: '15000296505'
       },
@@ -107,7 +107,7 @@ export default createStore({
         // brand: "沁园-纯水机",
         seller: '京东/沁园京东自营旗舰店',
         maintainer: '凉州区王掌柜1',
-        acceptance: 'C2020111315646108',
+        acceptance: 'C2020111315645438',
         sales: 'BXSD16052450548480684',
         telephone: '15002693910'
       },
@@ -118,12 +118,15 @@ export default createStore({
         // brand: "沁园-橱下RO机",
         seller: '天猫/沁园旗舰店',
         maintainer: '莲湖区李师傅*17',
-        acceptance: 'C2020111315650059',
+        acceptance: 'C2020111315621059',
         sales: 'BXSD160524780272653310',
         telephone: '15003582722'
       },
 
-    ]
+    ],
+    key: 6,
+    new_key: 1,
+    del_key: 0,
   },
   mutations: {
     

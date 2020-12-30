@@ -1,9 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
-
   {
     path: '/',
+    component: () => import('../views/Login.vue'),
+    meta: { title: '登录' }
+  },
+  {
+    path: '/Home',
     component: () => import('../views/Home.vue'),
     children: [
       {
@@ -18,11 +22,7 @@ const routes = [
       }
     ]
   },
-  {
-    path: '/login',
-    component: () => import('../views/Login.vue'),
-    meta: { title: '登录' }
-  },
+  
 ]
 
 const router = createRouter({
